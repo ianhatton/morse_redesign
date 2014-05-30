@@ -1,0 +1,20 @@
+.home {
+  .row_three {
+    .panel {
+      background-color: lighten(gray, 45%);
+      position: relative;
+
+      p {
+        display: none;
+      }
+
+      .panel_content {
+        &:hover {
+          p {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

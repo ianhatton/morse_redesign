@@ -1,0 +1,34 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1, .alpha {
+  font-size: 3.5em; /* 56px */
+}
+
+h2, .beta {
+  font-size: 3.125em; /* 50px */
+}
+
+h3, .gamma {
+  font-size: 2.75em; /* 44px */
+}
+
+h4, .delta {
+  font-size: 2.375em; /* 38px */
+}
+
+h5, .epsilon {
+  font-size: 2em; /* 32px */
+  line-height: 1.625em; /* 52px (32 * 1.62) */
+}
+
+h6, .zeta {
+  font-size: 1.625em; /* 26px */
+  line-height: 1.615em; /* 42px (26 * 1.62) */
+}
+
+li, p {
+  font-size: 1em; /* 16px */
+  line-height: 1.625em; /* 26px (16 * 1.62) */
+}

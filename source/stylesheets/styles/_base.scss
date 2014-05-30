@@ -1,0 +1,21 @@
+body {
+  color: #343432;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1em; /* 16px */
+}
+
+.panel {
+  margin: 10px 0;
+}
+
+.panel_content {
+  padding: 20px;
+}
+
+.row {
+  @include clearfix;
+}
+
+.wrap {
+  @include container;
+}
