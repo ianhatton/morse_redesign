@@ -1,7 +1,20 @@
 body {
-  color: #343432;
+  color: $text_dark;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em; /* 16px */
+}
+
+.center {
+  text-align: center;
+}
+
+.clearfix {
+  @include clearfix;
+}
+
+.introduction {
+  @include clearfix;
+  padding: 100px 0;
 }
 
 .panel {

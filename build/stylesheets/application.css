@@ -2030,27 +2030,27 @@
 .fa-bomb:before {
   content: "\f1e2"; }
 
-/* line 1, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
 body {
   color: #343432;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   /* 16px */ }
 
-/* line 7, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 7, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
 .panel {
   margin: 10px 0; }
 
-/* line 11, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 11, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
 .panel_content {
   padding: 20px; }
 
-/* line 15, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 15, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
 .row {
   overflow: hidden;
   *zoom: 1; }
 
-/* line 19, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 19, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
 .wrap {
   *zoom: 1;
   max-width: 1120px;
@@ -2065,77 +2065,148 @@ body {
     display: table;
     clear: both; }
 
-/* line 1, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; }
+/* line 23, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+.row_four {
+  color: #fff; }
+  /* line 26, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_four section {
+    float: left; }
+    /* line 29, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+    .row_four section header {
+      border-bottom: 1px solid #4d4d4d;
+      padding: 20px 20px 0; }
+    /* line 34, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+    .row_four section.one {
+      background-color: #222326; }
+      /* line 37, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+      .row_four section.one header {
+        background-color: #0a0a0b; }
+    /* line 42, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+    .row_four section.one, .row_four section.two {
+      width: 25%; }
+    /* line 46, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+    .row_four section.two {
+      background-color: #e16b5f; }
+    /* line 50, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+    .row_four section.three {
+      background-color: #158f54;
+      width: 50%; }
 
-/* line 5, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 58, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+.row_five article {
+  float: left;
+  position: relative;
+  width: 25%; }
+  /* line 63, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_five article a {
+    -webkit-transition: all, 0.3s ease-in-out;
+    -moz-transition: all, 0.3s ease-in-out;
+    -o-transition: all, 0.3s ease-in-out;
+    transition: all, 0.3s ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    text-decoration: none;
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    right: 0; }
+  /* line 75, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_five article:hover a {
+    bottom: 0; }
+  /* line 80, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_five article:hover .panel_content {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  /* line 90, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_five article .panel_content {
+    background-color: pink;
+    display: none; }
+  /* line 95, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+  .row_five article img {
+    height: 100%;
+    max-width: 100%;
+    vertical-align: bottom; }
+
+/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h1, .alpha {
   font-size: 3.5em;
   /* 56px */ }
 
-/* line 9, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 5, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h2, .beta {
   font-size: 3.125em;
   /* 50px */ }
 
-/* line 13, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 9, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h3, .gamma {
   font-size: 2.75em;
   /* 44px */ }
 
-/* line 17, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 13, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h4, .delta {
   font-size: 2.375em;
   /* 38px */ }
 
-/* line 21, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 17, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h5, .epsilon {
   font-size: 2em;
   /* 32px */
   line-height: 1.625em;
   /* 52px (32 * 1.62) */ }
 
-/* line 26, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 22, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 h6, .zeta {
   font-size: 1.625em;
   /* 26px */
   line-height: 1.615em;
   /* 42px (26 * 1.62) */ }
 
-/* line 31, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 27, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+.eta {
+  font-size: 0.875em;
+  /* 14px */ }
+
+/* line 31, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
 li, p {
   font-size: 1em;
   /* 16px */
   line-height: 1.625em;
   /* 26px (16 * 1.62) */ }
 
-/* line 3, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+/* line 36, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+.bold {
+  font-weight: 700; }
+
+/* line 3, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
 .home .row_two .panel {
   width: 48.93617%;
   float: left;
   margin-right: 2.12766%;
   display: inline; }
-  /* line 6, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+  /* line 6, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
   .home .row_two .panel.last {
     float: right;
     margin-right: 0;
     *margin-left: -20px;
     display: inline; }
-/* line 13, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+/* line 13, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
 .home .row_three .panel {
   width: 23.40426%;
   float: left;
   margin-right: 2.12766%;
   display: inline; }
 
-/* line 3, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 3, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_three .panel {
   background-color: #f3f3f3;
   position: relative; }
-  /* line 7, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  /* line 7, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
   .home .row_three .panel p {
     display: none; }
-  /* line 13, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  /* line 13, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
   .home .row_three .panel .panel_content:hover p {
     display: block; }

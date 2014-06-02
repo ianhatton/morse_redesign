@@ -1,46 +1,206 @@
 ---
 page_class: home
-title: Welcome to Middleman
+title: Morse Digital
 ---
 
-.row.row_one
-  %section.panel.hello
-    %h1.alpha Hello
-    %p.epsilon
-      We are a digital build agency, specialising in building systems that do clever things in an easy-to-understand way.
-      We specialise in finding bespoke solutions to our clients' problems. Bring it to us and we'll find a way forward for you.
-
-.row.row_two
-  %section.panel
-    %h1.delta What's a "System"?
-    %p
-      In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
+.wrap
+  %nav.main
     %ul
-      %li Dynamic Database-driven Websites
-      %li Management Systems
-      %li Communication Systems
-      %li Extranets
-      %li Automated Comercial Processes
-      %li eCommerce
-    %p
-      We also build iPhone and iPad apps.
-  %section.panel.last
-    %h1.delta Who Hires Us?
-    %p
-      Our clients include:
-    %ul
-      %li Media Owners
-      %li Industrial Companies who have a problem which needs a technological solution
-      %li Design Agencies who need digital build capabilities
-      %li Client-facing Agencies who need client-presentable technical experts
-      %li Agencies who have sold a client an idea which they have no idea how to deliver
+      %li About us
+      %li Our work
+      %li Our people
+      %li News & Blogs
+      %li Contact us
 
-.row.row_three
-  %section.panel
-    .panel_content
-      %header
-        %i.fa.fa-lightbulb-o
-        %h1.zeta Latest work | test
-      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur molestias dolores modi eos pariatur enim dignissimos accusantium temporibus
-      %footer
-        More
+.wrap
+  .row.row_one
+    %section.panel.hello.introduction
+      %h1.alpha Hello!
+      %p.epsilon
+        We are a
+        %em digital build agency
+        , specialising in building
+        %em systems
+        that do clever things in an easy-to-understand way.
+        We create
+        %em bespoke solutions
+        to our clients' problems.
+        %em Contact us
+        and we'll find a way forward for you.
+
+  .row.row_two
+    %section.panel.system
+      %h1.delta What's a "System"?
+      %p
+        In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
+      %ul
+        .clearfix
+          %li 
+            %i.alpha.fa.fa-database
+            .clearfix
+              Dynamic Database-driven Websites
+          %li 
+            %i.alpha.fa.fa-cog
+            .clearfix
+              Management Systems
+          %li.last
+            %i.alpha.fa.fa-comments-o
+            .clearfix
+              Communication Systems
+        .clearfix
+          %li
+            %i.alpha.fa.fa-sitemap
+            .clearfix
+              Extranets
+          %li
+            %i.alpha.fa.fa-clock-o
+            .clearfix
+              Automated Commercial Processes
+          %li.last
+            %i.alpha.fa.fa-shopping-cart
+            .clearfix
+              eCommerce
+          %li
+            %i.alpha.fa.fa-apple
+            .clearfix
+              iPhone and iPad apps
+    %section.panel.hires
+      .panel_content
+        %h1.delta Who Hires Us?
+        %p
+          Our clients include:
+        %ul.bullets
+          %li Media Owners
+          %li Industrial Companies who have a problem which needs a technological solution
+          %li Design Agencies who need digital build capabilities
+          %li Client-facing Agencies who need client-presentable technical experts
+          %li Agencies who have sold a client an idea which they have no idea how to deliver
+
+  %p.epsilon.center
+    Interested?
+    = succeed "." do
+      %em Let's talk
+
+.row.row_five
+  %section.panel.our_work
+    .wrap
+      .introduction
+        %h1.alpha Our work
+        %p.epsilon
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, neque, rem minus accusantium et blanditiis pariatur commodi veniam facere.
+    %article
+      =image_tag "http://lorempixel.com/400/200/"
+      .panel_content
+        %h1 Hey
+        %p Text
+      = link_to "View", "#"
+    %article
+      =image_tag "http://lorempixel.com/401/200/"
+    %article
+      =image_tag "http://lorempixel.com/402/200/"
+    %article
+      =image_tag "http://lorempixel.com/403/200/"
+    .clearfix
+      %article
+        =image_tag "http://lorempixel.com/404/200/"
+      %article
+        =image_tag "http://lorempixel.com/405/200/"
+      %article
+        =image_tag "http://lorempixel.com/406/200/"
+      %article
+        =image_tag "http://lorempixel.com/407/200/"
+    %p.epsilon.center
+      See more in
+      = succeed "." do
+        %em our work portfolio
+
+.wrap
+  .row.row_six
+    %section.panel.about_us
+      .introduction
+        %h1.alpha About us
+        %p.epsilon
+          We are digital media experts who have been delivering real-world client solutions since 1995.
+      .column_one
+        %p
+          Our core team comes from an established digital media consultancy, TTT International, established to provide consultancy services to Viacom, Inc.
+          %br
+          %br
+          Our clients include major players from global media corporations, Hollywood studios, UK Government departments, communications agencies, and small businesses.
+          %br
+          %br
+          We rebranded in October 2011 from TTT International to Morse Digital. It's a "code" thing.
+      .column_two
+        %h2.delta Our Approach
+        %ul
+          %li
+            %em "Seek first to understand":
+            We take a brief then work out what the client requires (not always what the client thinks they require).
+          %li
+            %em Propose a solution in non-tech terms:
+            We like to speak Plain English. Drawing pictures helps, too.
+          %li
+            %em Build a Prototype:
+            If there's something innovative or particularly high-tech in the proposed solution, we build a demo before the client commits wholesale to the project. Our prototype-to-full-build ratio is 100% so far.
+          %li
+            %em Agree a plan:
+            Little explanation needed here...
+          %li
+            %em Deliver. On budget:
+            We have a little rule we call our "No Surprises" rule. We work to a fixed cost for a fixed project. If the client asks for more, we agree any extra charges in advance. Our clients never receive an invoice they're not expecting.
+      .column_three
+        %h2.delta Testimonials
+        %p
+          "Morse invoices are my favourite to pay. The work is reliable and is consistently delivered on spec, time and budget. Working with Terry was a massive relief after some costly false starts elsewhere. Communication throughout has been easy and enjoyable as he is a gentleman as much as a professional. I continually recommend Morse to others"
+          %br
+          %br
+          Guy Harris
+          %br
+          Owner, DisabledGear.com
+
+.row.row_seven
+  .wrap
+    %section.panel.our_people
+      .introduction
+        %h1.alpha Our people
+        %p.epsilon
+          Our people are bats.
+          Larks rise with the sun. Bats get work done before the larks get out of bed. We're lucky that our people work while others sleep*.
+        .content_left
+          %p
+            That doesn't mean we outsource to offshore developers: all Morse people are UK based - they just prefer to work when the phones aren't ringing, which means a LOT of work gets done outside of "office hours".
+            %br
+            %br
+            *Of course, we work office hours, too. We're bats, not nuts.
+      %article
+        %header
+          %h1.zeta Terry
+          %h2.eta Managing Partner
+        %p.eta
+          With a digital industry career spanning over 18 years, Terry is our lead coder and the main point of contact for our clients. His day-to-day focus is to make sure our projects get delivered on time, and to our clients' specifications. He's good at turning tech-speak into plain English.
+      %article
+        %header
+          %h1.zeta Ade
+          %h2.eta Front End Tech Lead
+        %p.eta
+          Ade is our Front End guru. He takes graphic designs and translates them into beautiful front end code. He's also a JavaScript whiz.
+      %article
+        %header
+          %h1.zeta Gillian
+          %h2.eta Business Development Goddess
+        %p.eta
+          Gill helps us meet new clients. She's been part of the team since 2011 and has already helped us to grow significantly beyond those clients who have been with us for years. Gill isn't a geek, which helps considerably, as she's able to talk to people in client-speak, and makes sure we do too!
+      %article
+        %header
+          %h1.zeta Ian
+          %h2.eta Front End Wizard
+        %p.eta
+          Ian works with Ade to turn your pretty Front End designs into gorgeous HTML. He's also the inspiration behind our fab 404 and 500 pages.
+      %article.last
+        %header
+          %h1.zeta Nadjaha
+          %h2.eta Digital Project Manager
+        %p.eta
+          Nadj is our ace DPM. She makes sure we don't miss anything, including deadlines!
+          Her superior attention to detail means that our clients stay happy, and we stay focused.
+          Nadj is our "gatekeeper": she's usually your first port of call to get things done.

@@ -1,10 +1,21 @@
+body, html {
+  overflow-x: hidden;
+}
+
 .home {
   .row_two {
     .panel {
       @include span-columns(6, 12);
 
-      &.last {
-        @include omega;
+      &.hires {
+        @include bleed(1000px, right);
+        @include bleed(20px, left);
+      }
+
+      &.system {
+        li {
+          @include span-columns(2, 6);
+        }
       }
     }
   }
@@ -12,6 +23,34 @@
   .row_three {
     .panel {
       @include span-columns(3, 12);
+    }
+  }
+
+  .row_six {
+    .column_one, .column_two, .column_three {
+      @include span-columns(4, 12);
+    }
+
+    .column_three {
+      @include omega;
+    }
+  }
+
+  .row_seven {
+    .panel {
+      &.our_people {
+        article {
+          @include span-columns(2, 10);
+
+          &.last {
+            @include omega;
+          }
+        }
+
+        .content_left {
+          @include span-columns(6, 12);
+        }
+      }
     }
   }
 }
