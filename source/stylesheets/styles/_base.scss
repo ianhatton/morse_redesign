@@ -12,21 +12,26 @@ body {
   @include clearfix;
 }
 
-.introduction {
+.introduction, .introduction_narrow {
   @include clearfix;
   padding: 100px 0;
 }
 
+.introduction_narrow {
+  width: 75%;
+  margin: 0 auto;
+}
+
 .panel {
-  margin: 10px 0;
+  margin: 20px 0;
+}
+
+.panel, .row {
+  @include clearfix;
 }
 
 .panel_content {
   padding: 20px;
-}
-
-.row {
-  @include clearfix;
 }
 
 .wrap {
