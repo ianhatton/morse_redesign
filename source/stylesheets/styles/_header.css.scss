@@ -1,0 +1,22 @@
+header {
+  &.main {
+    background-color: #323234;
+
+    nav {
+      // layout
+      @include span-columns(6 omega, 12);
+
+      // styling
+      color: #fff;
+
+      li {
+        float: left;
+        margin-right: 10px;
+
+        &.last {
+          margin-right: 0;
+        }
+      } 
+    }
+  }
+}

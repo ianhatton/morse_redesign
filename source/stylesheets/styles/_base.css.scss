@@ -18,8 +18,8 @@ body {
 }
 
 .introduction_narrow {
-  width: 75%;
-  margin: 0 auto;
+  @include pad(2, 2);
+  @include span-columns(8, 12);
 }
 
 .panel {

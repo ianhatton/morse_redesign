@@ -2030,18 +2030,18 @@
 .fa-bomb:before {
   content: "\f1e2"; }
 
-/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 body {
   color: #343432;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   /* 16px */ }
 
-/* line 7, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 7, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .center {
   text-align: center; }
 
-/* line 11, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 11, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .clearfix {
   *zoom: 1; }
   /* line 8, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_mixins.css.scss */
@@ -2052,7 +2052,7 @@ body {
   .clearfix:after {
     clear: both; }
 
-/* line 15, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 15, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .introduction, .introduction_narrow {
   *zoom: 1;
   padding: 100px 0; }
@@ -2064,16 +2064,20 @@ body {
   .introduction:after, .introduction_narrow:after {
     clear: both; }
 
-/* line 20, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 20, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .introduction_narrow {
-  width: 75%;
-  margin: 0 auto; }
+  padding-left: 17.24138%;
+  padding-right: 17.24138%;
+  width: 65.51724%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline; }
 
-/* line 25, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 25, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel {
   margin: 20px 0; }
 
-/* line 29, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 29, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel, .row {
   *zoom: 1; }
   /* line 8, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_mixins.css.scss */
@@ -2084,11 +2088,11 @@ body {
   .panel:after, .row:after {
     clear: both; }
 
-/* line 33, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 33, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel_content {
   padding: 20px; }
 
-/* line 37, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.scss */
+/* line 37, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .wrap {
   *zoom: 1;
   max-width: 1120px;
@@ -2103,50 +2107,69 @@ body {
     display: table;
     clear: both; }
 
-/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 2, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+header.main {
+  background-color: #323234; }
+  /* line 5, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+  header.main nav {
+    width: 48.27586%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -40px;
+    display: inline;
+    color: #fff; }
+    /* line 12, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+    header.main nav li {
+      float: left;
+      margin-right: 10px; }
+      /* line 16, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+      header.main nav li.last {
+        margin-right: 0; }
+
+/* line 1, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h1, .alpha {
   font-size: 3.5em;
   /* 56px */ }
 
-/* line 5, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 5, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h2, .beta {
   font-size: 3.125em;
   /* 50px */ }
 
-/* line 9, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 9, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h3, .gamma {
   font-size: 2.75em;
   /* 44px */ }
 
-/* line 13, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 13, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h4, .delta {
   font-size: 2.375em;
   /* 38px */ }
 
-/* line 17, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 17, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h5, .epsilon {
   font-size: 2em;
   /* 32px */
   line-height: 1.625em;
   /* 52px (32 * 1.62) */ }
 
-/* line 22, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 22, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h6, .zeta {
   font-size: 1.625em;
   /* 26px */
   line-height: 1.615em;
   /* 42px (26 * 1.62) */ }
 
-/* line 27, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 27, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 .eta {
   font-size: 0.875em;
   /* 14px */ }
 
-/* line 31, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 31, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 em {
   font-weight: 700; }
 
-/* line 35, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 35, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 li, p {
   font-size: 1em;
   /* 16px */
@@ -2154,12 +2177,12 @@ li, p {
   /* 26px (16 * 1.62) */
   margin-bottom: 10px; }
 
-/* line 43, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 43, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 ul.bullets li {
   list-style-position: inside;
   list-style-type: disc; }
 
-/* line 50, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.scss */
+/* line 50, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 .bold {
   font-weight: 700; }
 
@@ -2186,37 +2209,45 @@ body, html {
     margin-right: 7.14286%;
     display: inline; }
 /* line 24, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-.home .row_three .panel {
-  width: 22.41379%;
+.home .row_three article {
+  margin-right: -1000px;
+  padding-right: 1000px;
+  margin-left: 17.24138%;
+  width: 82.75862%;
   float: left;
   margin-right: 3.44828%;
-  display: inline; }
-/* line 30, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-.home .row_six .column_one, .home .row_six .column_two, .home .row_six .column_three {
+  display: inline;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #f9f9f9;
+  border-bottom: 1px solid #f9f9f9;
+  color: #f9f9f9; }
+/* line 40, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+.home .row_four .column_one, .home .row_four .column_two, .home .row_four .column_three {
   width: 31.03448%;
   float: left;
   margin-right: 3.44828%;
   display: inline; }
-/* line 34, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-.home .row_six .column_three {
+/* line 44, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+.home .row_four .column_three {
   float: right;
   margin-right: 0;
   *margin-left: -40px;
   display: inline; }
-/* line 42, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-.home .row_seven .panel.our_people article {
+/* line 52, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+.home .row_five .panel.our_people article {
   width: 16.66667%;
   float: left;
   margin-right: 4.16667%;
   display: inline; }
-  /* line 45, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-  .home .row_seven .panel.our_people article.last {
+  /* line 55, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+  .home .row_five .panel.our_people article.last {
     float: right;
     margin-right: 0;
     *margin-left: -40px;
     display: inline; }
-/* line 50, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
-.home .row_seven .panel.our_people .content_left {
+/* line 60, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/responsive/specific/_home.css.scss */
+.home .row_five .panel.our_people .content_left {
   width: 48.27586%;
   float: left;
   margin-right: 3.44828%;
@@ -2236,77 +2267,28 @@ body, html {
     margin-right: 0;
     *margin-left: -40px;
     display: inline; }
-/* line 26, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-.home .row_three .panel {
-  position: relative;
-  background-color: #f3f3f3; }
-  /* line 33, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_three .panel p {
-    display: none; }
-  /* line 39, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_three .panel .panel_content:hover p {
-    display: block; }
-/* line 47, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-.home .row_five {
+/* line 25, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+.home .row_three {
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  background-color: #566473;
+  background-color: #3dbd93;
   color: #fff; }
-  /* line 52, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_five:hover {
-    background-color: #525f6d; }
-  /* line 56, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_five article {
-    float: left;
-    position: relative;
-    width: 25%; }
-    /* line 61, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-    .home .row_five article a {
-      padding: 20px;
-      position: absolute;
-      bottom: -50%;
-      left: 0;
-      right: 0;
-      -webkit-transition: all, 0.3s ease-in-out;
-      -moz-transition: all, 0.3s ease-in-out;
-      -o-transition: all, 0.3s ease-in-out;
-      transition: all, 0.3s ease-in-out;
-      background-color: #fff;
-      text-decoration: none; }
-    /* line 76, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-    .home .row_five article:hover a {
-      bottom: 0; }
-    /* line 80, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-    .home .row_five article:hover .panel_content {
-      display: block;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-    /* line 90, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-    .home .row_five article .panel_content {
-      display: none;
-      background-color: #566473;
-      opacity: 0.8; }
-    /* line 99, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-    .home .row_five article img {
-      height: 100%;
-      max-width: 100%;
-      vertical-align: bottom; }
-/* line 107, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-.home .row_seven {
+  /* line 30, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  .home .row_three:hover {
+    background-color: #3bb58d; }
+/* line 35, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+.home .row_five {
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;
   -o-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
   background-color: #e16b5f;
   color: #fff; }
-  /* line 112, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_seven:hover {
+  /* line 40, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  .home .row_five:hover {
     background-color: #df6356; }
-  /* line 120, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
-  .home .row_seven .panel.our_people article header h2 {
+  /* line 48, /Users/ianhatton/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  .home .row_five .panel.our_people article header h2 {
     color: #e7b4ae; }

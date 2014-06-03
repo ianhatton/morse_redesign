@@ -3,14 +3,15 @@ page_class: home
 title: Morse Digital
 ---
 
-.wrap
-  %nav.main
-    %ul
-      %li About us
-      %li Our work
-      %li Our people
-      %li News & Blogs
-      %li Contact us
+%header.main
+  .wrap
+    %nav.main
+      %ul
+        %li About us
+        %li Our work
+        %li Our people
+        %li News & Blogs
+        %li.last Contact us
 
 .wrap
   .row.row_one
@@ -81,41 +82,21 @@ title: Morse Digital
     = succeed "." do
       %em Let's talk
 
-.row.row_five
+.row.row_three
   %section.panel.our_work
     .wrap
       .introduction_narrow
-        %h1.delta Our latest work
+        %h1.delta The feed
         %p.zeta
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, neque, rem minus accusantium et blanditiis pariatur commodi veniam facere.
-    %article
-      =image_tag "http://lorempixel.com/400/200/"
-      .panel_content
-        %h1.zeta Hey
-        %p.eta Text
-      = link_to "View", "#"
-    %article
-      =image_tag "http://lorempixel.com/401/200/"
-    %article
-      =image_tag "http://lorempixel.com/402/200/"
-    %article
-      =image_tag "http://lorempixel.com/403/200/"
-    .clearfix
+          All the latest happenings in the world of Morse. Our most recent work, ramblings and social activity all packaged together in one place.
       %article
-        =image_tag "http://lorempixel.com/404/200/"
-      %article
-        =image_tag "http://lorempixel.com/405/200/"
-      %article
-        =image_tag "http://lorempixel.com/406/200/"
-      %article
-        =image_tag "http://lorempixel.com/407/200/"
-    %p.epsilon.center
-      See more in
-      = succeed "." do
-        %em our work portfolio
+        %header
+          %h1.zeta
+            Why strong cheddar is the only cheddar that really matters.
+          %h2.eta Ian Hatton
 
 .wrap
-  .row.row_six
+  .row.row_four
     %section.panel.about_us
       .introduction_narrow
         %h1.delta About us
@@ -158,7 +139,7 @@ title: Morse Digital
           %br
           Owner, DisabledGear.com
 
-.row.row_seven
+.row.row_five
   .wrap
     %section.panel.our_people
       .introduction_narrow
