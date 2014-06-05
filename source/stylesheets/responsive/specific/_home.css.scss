@@ -5,11 +5,32 @@ body, html {
 .home {
   .row_two {
     .panel {
-      @include span-columns(6, 12);
+      &.hires, &.system {
+        @include span-columns(6, 12);
+      }
 
       &.hires {
         @include bleed(1000px, right);
         @include bleed(20px, left);
+      }
+
+      &.our_clients {
+        text-align: center;
+        @include span-columns(12 omega, 12);
+
+        article {
+          @include span-columns(1, 12);
+          @include suffix(1, 12);
+
+          &.last {
+            @include omega;
+            @include suffix(0, 12);
+          }
+
+          img {
+            max-width: 100%;
+          }
+        }
       }
 
       &.system {
@@ -21,18 +42,79 @@ body, html {
   }
 
   .row_three {
-    article {
-      // layout
-      @include bleed(1000px, right);
-      @include pre(2, 12);
-      @include span-columns(10, 12);
-      padding-top: 10px;
-      padding-bottom: 10px;
+    .panel {
+      &.latest_work, &.blog_posts {
+        @include span-columns(6, 12);
+      }
 
-      // styling
-      border-top: 1px solid $cream;
-      border-bottom: 1px solid $cream;
-      color: $cream;
+      &.blog_posts {
+        @include omega;
+      }
+
+      &.latest_work {
+        article {
+          // layout
+          position: relative;
+          left: -10px;
+
+          // styling
+          @include transition(all 0.2s ease-in-out);
+
+          &:hover {
+            left: 0;
+
+            p {
+              margin-bottom: 20px;
+            }
+
+            .fade {
+              opacity: 0.8;
+            }
+
+            .panel_content {
+              // layout
+              top: 0;
+              left: 0px;
+
+              // styling
+              opacity: 1;
+            }
+          }
+
+          img {
+            max-width: 100%;
+          }
+
+          .fade {
+            // layout
+            display: block;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+
+            // styling
+            background-color: $text_dark;
+            opacity: 0;
+          }
+
+          .panel_content {
+            // layout
+            @include span-columns(4, 6);
+            position: absolute;
+            left: 10px;
+            top: -20px;
+
+            // styling
+            @include transition(all 0.2s ease-in-out);
+            opacity: 0;
+            z-index: 2;
+          }
+        }
+      }
     }
   }
 
@@ -59,6 +141,47 @@ body, html {
 
         .content_left {
           @include span-columns(6, 12);
+        }
+      }
+    }
+  }
+
+  .row_six {
+    .panel {
+      &.contact_us {
+        .column_one, .column_two, .column_three {
+          // layout
+          @include span-columns(4, 12);
+          text-align: center;
+
+          // styling
+          @include transition(all 0.2s ease-in-out);
+
+          &:hover {
+            background-color: $green;
+
+            i {
+              @include scale(1.5);
+            }
+          }
+
+          a {
+            // layout
+            display: block;
+            padding: 20px;
+
+            // styling
+            color: #fff;
+            text-decoration: none;
+          }
+
+          i {
+            @include transition(all 0.2s ease-in-out);
+          }
+        }
+
+        .column_three {
+          @include omega;
         }
       }
     }

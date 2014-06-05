@@ -1,22 +1,35 @@
 header {
   &.main {
-    background-color: #323234;
-
+    padding-top: 75px;
     nav {
       // layout
       @include span-columns(6 omega, 12);
 
-      // styling
-      color: #fff;
+      a {
+        @include transition(all 0.1s ease-in-out);
+        color: $text_dark;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover {
+          color: $red;
+        }
+      }
 
       li {
         float: left;
-        margin-right: 10px;
+        margin-right: 40px;
 
         &.last {
           margin-right: 0;
         }
       } 
     }
+  }
+}
+
+footer {
+  &.main {
+    background-color: #000;
   }
 }

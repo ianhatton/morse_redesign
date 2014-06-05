@@ -1,6 +1,6 @@
 WebFontConfig = {
   google: { 
-    families: [ 'Oswald:700:latin', 'Open+Sans:300:latin', 'Open+Sans+Condensed:300:latin', 'Source+Sans+Pro:300,700:latin' ]
+    families: [ 'Source+Sans+Pro:300,400,700:latin' ]
   }
 };
 

@@ -7,11 +7,11 @@ title: Morse Digital
   .wrap
     %nav.main
       %ul
-        %li About us
-        %li Our work
-        %li Our people
-        %li News & Blogs
-        %li.last Contact us
+        %li= link_to "About us", "#"
+        %li= link_to "Our work", "#"
+        %li= link_to "Our people", "#"
+        %li= link_to "News & Blogs", "#"
+        %li.last= link_to "Contact us", "#"
 
 .wrap
   .row.row_one
@@ -21,12 +21,15 @@ title: Morse Digital
         We are a
         %em digital build agency
         , specialising in building
-        %em systems
+        %em
+          =link_to "systems", "#"
         that do clever things in an easy-to-understand way.
         We create
-        %em bespoke solutions
+        %em 
+          =link_to "bespoke solutions", "#"
         to our clients' problems.
-        %em Contact us
+        %em
+          =link_to "Contact us", "#"
         and we'll find a way forward for you.
 
   .row.row_two
@@ -76,6 +79,21 @@ title: Morse Digital
           %li Design Agencies who need digital build capabilities
           %li Client-facing Agencies who need client-presentable technical experts
           %li Agencies who have sold a client an idea which they have no idea how to deliver
+    %section.panel.our_clients
+      %h1.epsilon Who have we worked with?
+      .clearfix
+        %article
+          =image_tag "client_logo_1.png", alt: "BFI"
+        %article
+          =image_tag "client_logo_2.png", alt: "Universal"
+        %article
+          =image_tag "client_logo_3.png", alt: "Tesco"
+        %article
+          =image_tag "client_logo_4.png", alt: "Sony Pictures"
+        %article
+          =image_tag "client_logo_1.png", alt: "BFI"
+        %article.last
+          =image_tag "client_logo_1.png", alt: "BFI"
 
   %p.epsilon.center
     Interested?
@@ -83,18 +101,38 @@ title: Morse Digital
       %em Let's talk
 
 .row.row_three
-  %section.panel.our_work
+  %section.panel.feed
     .wrap
       .introduction_narrow
         %h1.delta The feed
         %p.zeta
           All the latest happenings in the world of Morse. Our most recent work, ramblings and social activity all packaged together in one place.
+    %section.panel.latest_work
+      %h2.epsilon Latest work
       %article
-        %header
-          %h1.zeta
-            Why strong cheddar is the only cheddar that really matters.
-          %h2.eta Ian Hatton
-
+        = image_tag("http://fillmurray.com/1000/200")
+        .panel_content
+          %p.eta
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis quidem voluptatem.
+        .fade
+      %article
+        = image_tag("http://fillmurray.com/1001/200")
+        .panel_content
+          %p.eta
+            Consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis quidem voluptatem.
+        .fade
+      %article
+        = image_tag("http://fillmurray.com/1002/200")
+        .panel_content
+          %p.eta
+            Sit amet, consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis.
+        .fade
+    %section.panel.blog_posts
+      %h2.epsilon Blog posts
+      %article
+        %h1.zeta Hey
+        %p.eta Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, neque, non, magni, temporibus dolores illum quam odit id maxime ut voluptates tenetur reiciendis incidunt! Dolorum, soluta dolore inventore natus fuga?
+      
 .wrap
   .row.row_four
     %section.panel.about_us
@@ -184,3 +222,28 @@ title: Morse Digital
           Nadj is our ace DPM. She makes sure we don't miss anything, including deadlines!
           Her superior attention to detail means that our clients stay happy, and we stay focused.
           Nadj is our "gatekeeper": she's usually your first port of call to get things done.
+
+.row.row_six
+  .wrap
+    %section.panel.contact_us
+      .introduction_narrow
+        %h1.delta Contact us
+        %p.zeta
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sint, doloribus incidunt labore corporis tempore consequatur.
+      %p.epsilon.center "Hello, Morse. I'm interested in..."
+      .column_one
+        %a{ href: "#" }
+          %i.fa.fa-rocket.epsilon
+          %h2.epsilon ...starting a project with you."
+      .column_two
+        %a{ href: "#" }
+          %i.fa.fa-users.epsilon
+          %h2.epsilon ...joining your team."
+      .column_three
+        %a{ href: "#" }
+          %i.fa.fa-comments.epsilon
+          %h2.epsilon ...something else."
+
+%footer.main
+  .wrap
+    Blah

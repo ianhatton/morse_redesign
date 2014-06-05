@@ -1,4 +1,26 @@
+// body {
+//   background: image_url("bg.jpg") top center fixed no-repeat;
+// }
+
 .home {
+  .row_one {
+    .panel {
+      &.hello {
+        a {
+          @include transition(all 0.1s ease-in-out);
+          border-bottom: 1px dashed $text_dark;
+          color: $text_dark;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 1px dashed $red;
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+
   .row_two {
     .panel {
       &.hires {
@@ -6,7 +28,7 @@
         float: right;
 
         // styling
-        background-color: #525f6d;
+        background-color: $red;
         color: #fff;
       }
 
@@ -30,6 +52,14 @@
     &:hover {
       background-color: darken($green, 2%);
     }
+
+    .panel {
+      &.latest_work {
+        article {
+          overflow: hidden;
+        }
+      }
+    }
   }
 
   .row_five {
@@ -52,5 +82,11 @@
         }
       }
     }
+  }
+
+  .row_six {
+    @include transition(background-color 0.2s ease-in-out);
+    background-color: $text_dark;
+    color: #fff;
   }
 }
