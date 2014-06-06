@@ -1,10 +1,8 @@
 header {
   &.main {
     padding-top: 75px;
-    nav {
-      // layout
-      @include span-columns(6 omega, 12);
 
+    nav {
       a {
         @include transition(all 0.1s ease-in-out);
         color: $text_dark;

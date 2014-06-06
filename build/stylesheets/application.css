@@ -2113,35 +2113,45 @@ body, html {
     display: table;
     clear: both; }
 
+/* line 3, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_header.css.scss */
+header.main nav {
+  width: 48.27586%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -40px;
+  display: inline; }
+/* line 7, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_header.css.scss */
+header.main .logo {
+  width: 13.7931%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline; }
+  /* line 10, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/responsive/specific/_header.css.scss */
+  header.main .logo img {
+    max-width: 100%; }
+
 /* line 2, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
 header.main {
   padding-top: 75px; }
-  /* line 4, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
-  header.main nav {
-    width: 48.27586%;
-    float: right;
-    margin-right: 0;
-    *margin-left: -40px;
-    display: inline; }
-    /* line 8, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
-    header.main nav a {
-      -webkit-transition: all 0.1s ease-in-out;
-      -moz-transition: all 0.1s ease-in-out;
-      -o-transition: all 0.1s ease-in-out;
-      transition: all 0.1s ease-in-out;
-      color: #343432;
-      font-weight: 400;
-      text-decoration: none; }
-      /* line 14, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
-      header.main nav a:hover {
-        color: #e16b5f; }
-    /* line 19, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
-    header.main nav li {
-      float: left;
-      margin-right: 40px; }
-      /* line 23, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
-      header.main nav li.last {
-        margin-right: 0; }
+  /* line 6, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+  header.main nav a {
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    color: #343432;
+    font-weight: 400;
+    text-decoration: none; }
+    /* line 12, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+    header.main nav a:hover {
+      color: #e16b5f; }
+  /* line 17, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+  header.main nav li {
+    float: left;
+    margin-right: 40px; }
+    /* line 21, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_header.css.scss */
+    header.main nav li.last {
+      margin-right: 0; }
 
 /* line 1, /Volumes/1TB_Drive/new_sites/morse_redesign/source/stylesheets/styles/_typography.css.scss */
 h1, .alpha {

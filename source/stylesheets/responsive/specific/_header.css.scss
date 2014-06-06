@@ -1,0 +1,15 @@
+header {
+  &.main {
+    nav {
+      @include span-columns(6 omega, 12); 
+    }
+
+    .logo {
+      @include span-columns(2, 12);
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
