@@ -2032,22 +2032,27 @@
 
 /* line 1, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 body {
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(1%, #fafafa), color-stop(100%, #e9e9eb));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #fafafa 1%, #e9e9eb 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #fafafa 1%, #e9e9eb 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, #fafafa 1%, #e9e9eb 100%);
+  background-image: radial-gradient(center, ellipse cover, #fafafa 1%, #e9e9eb 100%);
   color: #343432;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em;
   /* 16px */
   font-weight: 300; }
 
-/* line 8, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 9, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 body, html {
   height: 100%;
   overflow-x: hidden; }
 
-/* line 13, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 14, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .center {
   text-align: center; }
 
-/* line 17, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 18, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .clearfix {
   *zoom: 1; }
   /* line 8, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_mixins.css.scss */
@@ -2058,7 +2063,7 @@ body, html {
   .clearfix:after {
     clear: both; }
 
-/* line 21, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 22, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .introduction, .introduction_narrow {
   *zoom: 1;
   padding: 50px 0; }
@@ -2070,7 +2075,7 @@ body, html {
   .introduction:after, .introduction_narrow:after {
     clear: both; }
 
-/* line 26, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 27, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .introduction_narrow {
   padding-left: 17.24138%;
   padding-right: 17.24138%;
@@ -2079,11 +2084,11 @@ body, html {
   margin-right: 3.44828%;
   display: inline; }
 
-/* line 31, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 32, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel {
   margin: 20px 0; }
 
-/* line 35, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 36, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel, .row {
   *zoom: 1; }
   /* line 8, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_mixins.css.scss */
@@ -2094,11 +2099,11 @@ body, html {
   .panel:after, .row:after {
     clear: both; }
 
-/* line 39, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 40, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .panel_content {
   padding: 20px; }
 
-/* line 43, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 44, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .wrap {
   *zoom: 1;
   max-width: 1120px;
@@ -2113,7 +2118,7 @@ body, html {
     display: table;
     clear: both; }
 
-/* line 48, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 49, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .modal .panel_content {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2132,7 +2137,7 @@ body, html {
   background-color: #fff;
   box-shadow: 4px 4px 80px #000; }
 
-/* line 66, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 67, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 .modal_background {
   position: absolute;
   z-index: 9999;
@@ -2143,7 +2148,7 @@ body, html {
   background-color: #000000;
   opacity: 0.8; }
 
-/* line 79, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+/* line 80, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
 section.blogs article {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -2151,17 +2156,17 @@ section.blogs article {
   transition: all 0.2s ease-in-out;
   position: relative;
   text-align: center; }
-  /* line 84, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+  /* line 85, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
   section.blogs article:hover {
     background-color: #525f6d; }
-    /* line 88, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+    /* line 89, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
     section.blogs article:hover .read_more a {
       opacity: 1;
       margin-top: 0; }
-    /* line 95, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+    /* line 96, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
     section.blogs article:hover .teaser {
       color: #758597; }
-  /* line 102, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
+  /* line 103, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/_base.css.scss */
   section.blogs article .read_more a {
     position: absolute;
     top: 30%;
@@ -2516,7 +2521,7 @@ ul.bullets li {
 .about .row_one .panel.our_people article header {
   margin-bottom: 10px; }
 
-/* line 9, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 5, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_one .panel.hello a {
   -webkit-transition: all 0.1s ease-in-out;
   -moz-transition: all 0.1s ease-in-out;
@@ -2525,26 +2530,26 @@ ul.bullets li {
   border-bottom: 1px dashed #343432;
   color: #343432;
   text-decoration: none; }
-  /* line 15, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+  /* line 11, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
   .home .row_one .panel.hello a:hover {
     border-bottom: 1px dashed #e16b5f;
     color: #e16b5f; }
-/* line 27, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 23, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_two .panel.what_do_we_do li {
   text-align: center; }
-/* line 32, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 28, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_two .panel.who_hires_us {
   float: right;
   background-color: #e16b5f;
   color: #fff; }
-/* line 46, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 42, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_four .panel.latest_work article {
   margin-bottom: 10px;
   overflow: hidden; }
-/* line 51, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 47, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_four .panel.latest_work .button {
   float: right; }
-/* line 58, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
+/* line 54, /Volumes/1TB_Drive/Sites/morse_redesign/source/stylesheets/styles/specific/_home.css.scss */
 .home .row_five {
   -webkit-transition: background-color 0.2s ease-in-out;
   -moz-transition: background-color 0.2s ease-in-out;

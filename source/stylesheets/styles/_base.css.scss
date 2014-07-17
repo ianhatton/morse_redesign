@@ -1,4 +1,5 @@
 body {
+  @include background-image(radial-gradient(center, ellipse cover, #fafafa 1%, #e9e9eb 100%));
   color: $text_dark;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1em; /* 16px */
