@@ -1,17 +1,31 @@
 .home {
   .row_two {
     .panel {
-      &.hires, &.system {
-        @include span-columns(6, 12);
-      }
+      &.what {
+        li {
+          @include span-columns(3, 12);
 
+          &.item_4, &.last {
+            @include omega;
+          }
+
+          &.item_5 {
+            clear: left;
+          }
+        }
+      }
+    }
+  }
+
+  .row_threenew {
+    .panel {
       &.hires {
+        @include span-columns(6 omega, 12);
         @include bleed(1000px, right);
         @include bleed(20px, left);
       }
 
       &.our_clients {
-        text-align: center;
         @include span-columns(12 omega, 12);
 
         article {
@@ -30,8 +44,10 @@
       }
 
       &.system {
+        @include span-columns(6, 12);
+
         li {
-          @include span-columns(2, 6);
+          @include span-columns(6 omega, 6);
         }
       }
     }
@@ -40,74 +56,90 @@
   .row_three {
     .panel {
       &.latest_work, &.blog_posts {
-        @include span-columns(6, 12);
-      }
-
-      &.blog_posts {
-        @include omega;
+        @include span-columns(12 omega, 12);
       }
 
       &.latest_work {
         article {
           // layout
+          float: left;
           position: relative;
-          left: -10px;
+          width: percentage(4/12);
 
           // styling
-          @include transition(all 0.2s ease-in-out);
+          @include transition(all 3s ease-in-out);
 
           &:hover {
-            left: 0;
-
-            p {
-              margin-bottom: 20px;
-            }
-
             .fade {
               opacity: 0.8;
             }
 
             .panel_content {
-              // layout
-              top: 0;
-              left: 0px;
-
-              // styling
+              bottom: 0;
               opacity: 1;
+
+              h1 {
+                margin: 0;
+              }
+
+              p {
+                opacity: 1;
+              }
             }
           }
 
+          &.last {
+            @include omega;
+          }
+
+          header {
+            margin-top: 50px;
+          }
+
+          h1, p {
+            @include transition(all 0.2s ease-in-out);
+            color: #fff;
+          }
+
           img {
-            max-width: 100%;
-          }
-
-          .fade {
             // layout
-            display: block;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 100%;
-
+            height: 400px;
+            vertical-align: bottom;
+            max-width: 100%;
+            
             // styling
-            background-color: $text_dark;
-            opacity: 0;
+            @include transition(all 0.35s ease-in-out);
           }
+
+          // .fade {
+          //   // layout
+          //   display: block;
+          //   height: 100%;
+          //   position: absolute;
+          //   top: 0;
+          //   bottom: 0;
+          //   left: 0;
+          //   right: 0;
+          //   width: 100%;
+
+          //   // styling
+          //   background-color: $red;
+          //   opacity: 0;
+          // }
 
           .panel_content {
             // layout
-            @include span-columns(4, 6);
             position: absolute;
-            left: 10px;
-            top: -20px;
+            left: 0;
+            bottom: -40px;
 
             // styling
             @include transition(all 0.2s ease-in-out);
-            opacity: 0;
             z-index: 2;
+
+            p {
+              opacity: 0;
+            }
           }
         }
       }

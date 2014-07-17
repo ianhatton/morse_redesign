@@ -11,10 +11,11 @@
     
     <link href="/stylesheets/reset.css" media="screen" rel="stylesheet" type="text/css" />
 <link href="/stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js" type="text/javascript"></script>
     <script src="/javascripts/all.js" type="text/javascript"></script>
   </head>
   
-  <body class="home">
+  <body class="home" ng-app="homePage">
     <header class='main'>
   <div class='wrap'>
     <div class='logo'>
@@ -164,42 +165,8 @@
         </p>
       </div>
     </div>
-    <section class='panel latest_work'>
-      <h2 class='epsilon'>Latest work</h2>
-      <article>
-        <img src="http://fillmurray.com/1000/200" />
-        <div class='panel_content'>
-          <p class='eta'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis quidem voluptatem.
-          </p>
-        </div>
-        <div class='fade'></div>
-      </article>
-      <article>
-        <img src="http://fillmurray.com/1001/200" />
-        <div class='panel_content'>
-          <p class='eta'>
-            Consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis quidem voluptatem.
-          </p>
-        </div>
-        <div class='fade'></div>
-      </article>
-      <article>
-        <img src="http://fillmurray.com/1002/200" />
-        <div class='panel_content'>
-          <p class='eta'>
-            Sit amet, consectetur adipisicing elit. Vero, porro, optio aut dolores quos at praesentium ratione non eum asperiores eius sint iusto vitae aliquam eligendi numquam corporis.
-          </p>
-        </div>
-        <div class='fade'></div>
-      </article>
-    </section>
-    <section class='panel blog_posts'>
-      <h2 class='epsilon'>Blog posts</h2>
-      <article>
-        <h1 class='zeta'>Hey</h1>
-        <p class='eta'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, neque, non, magni, temporibus dolores illum quam odit id maxime ut voluptates tenetur reiciendis incidunt! Dolorum, soluta dolore inventore natus fuga?</p>
-      </article>
+    <section class='panel latest_work' ng-controller='FeedController as feed'>
+      <latest-work ng-include="'latest-work.html.haml" ng-repeat='job in feed.jobs'></latest-work>
     </section>
   </section>
 </div>

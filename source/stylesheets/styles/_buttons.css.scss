@@ -1,0 +1,24 @@
+.button {
+  // layout
+  padding: 20px;
+  text-align: center;
+
+  // styling
+  @include transition(all 0.2s ease-in-out);
+  color: $text_dark;
+  font-size: 1.5em; /* 24px */
+  line-height: 1.625em; /* 39px / 24px */
+  text-decoration: none;
+
+  &:after {
+    content: "\f105";
+    font-family: "FontAwesome";
+    margin-left: 5px;
+  }
+
+  &:hover {
+    background-color: $red;
+    color: #fff;
+    font-weight: 300;
+  }
+}

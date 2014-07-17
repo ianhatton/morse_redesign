@@ -10,10 +10,11 @@
     <title><%= current_page.data.title || "The Middleman" %></title>
     
     <%= stylesheet_link_tag "reset", "application" %>
+    <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js" %>
     <%= javascript_include_tag  "all" %>
   </head>
   
-  <body class="<%= current_page.data.page_class %>">
+  <body class="<%= current_page.data.page_class %>" ng-app="<%= current_page.data.ng_app%>">
     <%= yield %>
   </body>
 </html>

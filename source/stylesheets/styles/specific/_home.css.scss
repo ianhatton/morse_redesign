@@ -21,6 +21,19 @@
     }
   }
 
+  .row_threenew {
+    .panel {
+      &.hires {
+        // layout
+        float: right;
+
+        // styling
+        background-color: $red;
+        color: #fff;
+      }
+    }
+  }
+
   .row_two {
     .panel {
       &.hires {
@@ -32,31 +45,24 @@
         color: #fff;
       }
 
-      &.system {
+      &.what {
         li {
           text-align: center;
-
-          &.last {
-            @include omega;
-          }
         }
       }
     }
   }
 
   .row_three {
-    @include transition(background-color 0.2s ease-in-out);
-    background-color: $green;
-    color: #fff;
-
-    &:hover {
-      background-color: darken($green, 2%);
-    }
-
     .panel {
       &.latest_work {
         article {
+          margin-bottom: 10px;
           overflow: hidden;
+        }
+
+        .button {
+          float: right;
         }
       }
     }
@@ -75,6 +81,8 @@
       &.our_people {
         article {
           header {
+            margin-bottom: 10px;
+            
             h2 {
               color: #e7b4ae;
             }
