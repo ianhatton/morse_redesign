@@ -1,7 +1,7 @@
 .home {
   .row_two {
     .panel {
-      &.what {
+      &.what_do_we_do {
         li {
           @include span-columns(3, 12);
 
@@ -17,12 +17,14 @@
     }
   }
 
-  .row_threenew {
+  .row_two {
     .panel {
-      &.hires {
-        @include span-columns(6 omega, 12);
-        @include bleed(1000px, right);
-        @include bleed(20px, left);
+      &.our_approach {
+        @include span-columns(6, 12);
+
+        li {
+          @include span-columns(6 omega, 6);
+        }
       }
 
       &.our_clients {
@@ -43,23 +45,19 @@
         }
       }
 
-      &.system {
-        @include span-columns(6, 12);
-
-        li {
-          @include span-columns(6 omega, 6);
-        }
+      &.who_hires_us {
+        @include span-columns(6 omega, 12);
+        @include bleed(1000px, right);
+        @include bleed(20px, left);
       }
     }
   }
 
-  .row_three {
+  .row_four {
     .panel {
-      &.latest_work, &.blog_posts {
-        @include span-columns(12 omega, 12);
-      }
-
       &.latest_work {
+        @include span-columns(12 omega, 12);
+
         article {
           // layout
           float: left;
@@ -146,35 +144,7 @@
     }
   }
 
-  .row_four {
-    .column_one, .column_two, .column_three {
-      @include span-columns(4, 12);
-    }
-
-    .column_three {
-      @include omega;
-    }
-  }
-
   .row_five {
-    .panel {
-      &.our_people {
-        article {
-          @include span-columns(2, 10);
-
-          &.last {
-            @include omega;
-          }
-        }
-
-        .content_left {
-          @include span-columns(6, 12);
-        }
-      }
-    }
-  }
-
-  .row_six {
     .panel {
       &.contact_us {
         .column_one, .column_two, .column_three {

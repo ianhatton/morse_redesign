@@ -1,0 +1,32 @@
+---
+ng_app: homePage
+page_class: about
+title: Morse Digital
+---
+
+= partial "header"
+
+.wrap
+  .row.row_one
+    .wrap
+      %section.panel.our_people{ "ng-controller" => "PeopleController as people" }
+        .introduction_narrow
+          %h1.delta Our people
+          %p.epsilon
+            Our people are bats.
+            Larks rise with the sun. Bats get work done before the larks get out of bed. We're lucky that our people work while others sleep*.
+          %p
+            That doesn't mean we outsource to offshore developers: all Morse people are UK based - they just prefer to work when the phones aren't ringing, which means a LOT of work gets done outside of "office hours".
+            %br
+            %br
+            *Of course, we work office hours, too. We're bats, not nuts.
+        %article{ "ng-repeat" => "person in people.people", "ng-class" => "{last: $last}" }
+          %header
+            %h1.epsilon
+              {{person.name}}
+            %h2.zeta {{person.role}}
+          %img{ src: "{{person.image}}" }
+          %p
+            {{person.description}}
+
+= partial "footer"

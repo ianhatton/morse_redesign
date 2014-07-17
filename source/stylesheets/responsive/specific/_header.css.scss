@@ -1,7 +1,11 @@
 header {
   &.main {
     nav {
-      @include span-columns(6 omega, 12); 
+      @include span-columns(6 omega, 12);
+
+      ul {
+        float: right;
+      }
     }
 
     .logo {

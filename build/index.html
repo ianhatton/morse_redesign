@@ -23,11 +23,10 @@
     </div>
     <nav class='main'>
       <ul>
-        <li><a href="#">About us</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="#">Our work</a></li>
-        <li><a href="#">Our people</a></li>
-        <li><a href="#">News & Blogs</a></li>
-        <li class='last'><a href="#">Contact us</a></li>
+        <li><a href="#">Stuff and thoughts</a></li>
+        <li class='last'><a href="#">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -36,7 +35,7 @@
   <div class='row row_one'>
     <section class='panel hello introduction'>
       <h1 class='alpha'>Hello!</h1>
-      <p class='epsilon'>
+      <p class='delta'>
         We are a
         <em>digital build agency</em>
         , specialising in building
@@ -57,141 +56,31 @@
     </section>
   </div>
   <div class='row row_two'>
-    <section class='panel system'>
-      <h1 class='epsilon'>What's a "System"?</h1>
-      <p>
-        In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
-      </p>
+    <section class='panel what_do_we_do' ng-controller='ServicesController as services'>
+      <div class='introduction_narrow'>
+        <h1 class='delta'>What do we do?</h1>
+        <p class='epsilon'>
+          In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
+        </p>
+      </div>
       <ul>
-        <div class='clearfix'>
-          <li>
-            <i class='alpha fa fa-database'></i>
-            <div class='clearfix'>
-              Dynamic Database-driven Websites
-            </div>
-          </li>
-          <li>
-            <i class='alpha fa fa-cog'></i>
-            <div class='clearfix'>
-              Management Systems
-            </div>
-          </li>
-          <li class='last'>
-            <i class='alpha fa fa-comments-o'></i>
-            <div class='clearfix'>
-              Communication Systems
-            </div>
-          </li>
-        </div>
-        <div class='clearfix'>
-          <li>
-            <i class='alpha fa fa-sitemap'></i>
-            <div class='clearfix'>
-              Extranets
-            </div>
-          </li>
-          <li>
-            <i class='alpha fa fa-clock-o'></i>
-            <div class='clearfix'>
-              Automated Commercial Processes
-            </div>
-          </li>
-          <li class='last'>
-            <i class='alpha fa fa-shopping-cart'></i>
-            <div class='clearfix'>
-              eCommerce
-            </div>
-          </li>
-          <li>
-            <i class='alpha fa fa-apple'></i>
-            <div class='clearfix'>
-              iPhone and iPad apps
-            </div>
-          </li>
-        </div>
+        <li class='item_{{$index+1}}' ng-class='{last : ($index +1) % 4 == 0}' ng-repeat='service in services.services'>
+          <i class='alpha fa {{service.icon}}'></i>
+          <div class='clearfix'>
+            <h2 class='zeta'>
+              {{service.name}}
+            </h2>
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.</p>
+        </li>
+        <li class='last'>
+          <a class="button" href="#">More</a>
+        </li>
       </ul>
     </section>
-    <section class='panel hires'>
+    <section class='panel our_approach'>
       <div class='panel_content'>
-        <h1 class='epsilon'>Who Hires Us?</h1>
-        <p>
-          Our clients include:
-        </p>
-        <ul class='bullets'>
-          <li>Media Owners</li>
-          <li>Industrial Companies who have a problem which needs a technological solution</li>
-          <li>Design Agencies who need digital build capabilities</li>
-          <li>Client-facing Agencies who need client-presentable technical experts</li>
-          <li>Agencies who have sold a client an idea which they have no idea how to deliver</li>
-        </ul>
-      </div>
-    </section>
-    <section class='panel our_clients'>
-      <h1 class='epsilon'>Who have we worked with?</h1>
-      <div class='clearfix'>
-        <article>
-          <img alt="BFI" src="/images/client_logo_1.png" />
-        </article>
-        <article>
-          <img alt="Universal" src="/images/client_logo_2.png" />
-        </article>
-        <article>
-          <img alt="Tesco" src="/images/client_logo_3.png" />
-        </article>
-        <article>
-          <img alt="Sony Pictures" src="/images/client_logo_4.png" />
-        </article>
-        <article>
-          <img alt="BFI" src="/images/client_logo_1.png" />
-        </article>
-        <article class='last'>
-          <img alt="BFI" src="/images/client_logo_1.png" />
-        </article>
-      </div>
-    </section>
-  </div>
-  <p class='epsilon center'>
-    Interested?
-    <em>Let's talk</em>.
-  </p>
-</div>
-<div class='row row_three'>
-  <section class='panel feed'>
-    <div class='wrap'>
-      <div class='introduction_narrow'>
-        <h1 class='delta'>The feed</h1>
-        <p class='zeta'>
-          All the latest happenings in the world of Morse. Our most recent work, ramblings and social activity all packaged together in one place.
-        </p>
-      </div>
-    </div>
-    <section class='panel latest_work' ng-controller='FeedController as feed'>
-      <latest-work ng-include="'latest-work.html.haml" ng-repeat='job in feed.jobs'></latest-work>
-    </section>
-  </section>
-</div>
-<div class='wrap'>
-  <div class='row row_four'>
-    <section class='panel about_us'>
-      <div class='introduction_narrow'>
-        <h1 class='delta'>About us</h1>
-        <p class='zeta'>
-          We are digital media experts who have been delivering real-world client solutions since 1995.
-        </p>
-      </div>
-      <div class='column_one'>
-        <p>
-          Our core team comes from an established digital media consultancy, TTT International, established to provide consultancy services to Viacom, Inc.
-          <br>
-          <br>
-          Our clients include major players from global media corporations, Hollywood studios, UK Government departments, communications agencies, and small businesses.
-          <br>
-          <br>
-          We rebranded in October 2011 from TTT International to Morse Digital. It's a "code" thing.
-        </p>
-      </div>
-      <div class='column_two'>
-        <h2 class='epsilon'>Our Approach</h2>
+        <h1 class='epsilon'>Our Approach</h1>
         <ul>
           <li>
             <em>"Seek first to understand":</em>
@@ -215,92 +104,91 @@
           </li>
         </ul>
       </div>
-      <div class='column_three'>
-        <h2 class='epsilon'>Testimonials</h2>
+    </section>
+    <section class='panel who_hires_us'>
+      <div class='panel_content'>
+        <h1 class='epsilon'>Who Hires Us?</h1>
         <p>
-          "Morse invoices are my favourite to pay. The work is reliable and is consistently delivered on spec, time and budget. Working with Terry was a massive relief after some costly false starts elsewhere. Communication throughout has been easy and enjoyable as he is a gentleman as much as a professional. I continually recommend Morse to others"
-          <br>
-          <br>
-          Guy Harris
-          <br>
-          Owner, DisabledGear.com
+          Our clients include:
         </p>
+        <ul class='bullets'>
+          <li>Media Owners</li>
+          <li>Industrial Companies who have a problem which needs a technological solution</li>
+          <li>Design Agencies who need digital build capabilities</li>
+          <li>Client-facing Agencies who need client-presentable technical experts</li>
+          <li>Agencies who have sold a client an idea which they have no idea how to deliver</li>
+        </ul>
+      </div>
+    </section>
+    <section class='panel our_clients'>
+      <div class='introduction_narrow'>
+        <h1 class='delta'>Who have we worked with?</h1>
+        <p class='epsilon'>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus in, quaerat ducimus dolorem libero magnam ipsum.
+        </p>
+      </div>
+      <div class='panel_content'>
+        <div class='clearfix'>
+          <article>
+            <img alt="BFI" src="/images/client_logo_1.png" />
+          </article>
+          <article>
+            <img alt="Universal" src="/images/client_logo_2.png" />
+          </article>
+          <article>
+            <img alt="Tesco" src="/images/client_logo_3.png" />
+          </article>
+          <article>
+            <img alt="Sony Pictures" src="/images/client_logo_4.png" />
+          </article>
+          <article>
+            <img alt="BFI" src="/images/client_logo_1.png" />
+          </article>
+          <article class='last'>
+            <img alt="BFI" src="/images/client_logo_1.png" />
+          </article>
+        </div>
       </div>
     </section>
   </div>
+</div>
+<div class='row row_four'>
+  <section class='panel feed'>
+    <div class='wrap'>
+      <div class='introduction_narrow'>
+        <h1 class='delta'>Our latest work</h1>
+        <p class='epsilon'>
+          Quia possimus ipsam, totam ab culpa quisquam tenetur, voluptas. Amet iure culpa enim voluptates. Alias aut debitis error sit suscipit rerum, repellat.
+        </p>
+      </div>
+    </div>
+    <section class='panel latest_work' ng-controller='FeedController as feed'>
+      <article ng-repeat='job in feed.jobs'>
+        <img src='{{job.image}}'>
+        <div class='panel_content'>
+          <header>
+            <h1 class='epsilon'>
+              {{job.title}}
+              <span class='bold'>{{job.subtitle}}</span>
+            </h1>
+          </header>
+          <p class='eta'>{{job.intro}}</p>
+        </div>
+      </article>
+      <div class='wrap'>
+        <div class='clearfix'>
+          <a class="button" href="#">See more of our work</a>
+        </div>
+      </div>
+    </section>
+  </section>
 </div>
 <div class='row row_five'>
-  <div class='wrap'>
-    <section class='panel our_people'>
-      <div class='introduction_narrow'>
-        <h1 class='delta'>Our people</h1>
-        <p class='zeta'>
-          Our people are bats.
-          Larks rise with the sun. Bats get work done before the larks get out of bed. We're lucky that our people work while others sleep*.
-        </p>
-        <p>
-          That doesn't mean we outsource to offshore developers: all Morse people are UK based - they just prefer to work when the phones aren't ringing, which means a LOT of work gets done outside of "office hours".
-          <br>
-          <br>
-          *Of course, we work office hours, too. We're bats, not nuts.
-        </p>
-      </div>
-      <article>
-        <header>
-          <h1 class='zeta'>Terry</h1>
-          <h2 class='eta'>Managing Partner</h2>
-        </header>
-        <p class='eta'>
-          With a digital industry career spanning over 18 years, Terry is our lead coder and the main point of contact for our clients. His day-to-day focus is to make sure our projects get delivered on time, and to our clients' specifications. He's good at turning tech-speak into plain English.
-        </p>
-      </article>
-      <article>
-        <header>
-          <h1 class='zeta'>Ade</h1>
-          <h2 class='eta'>Front End Tech Lead</h2>
-        </header>
-        <p class='eta'>
-          Ade is our Front End guru. He takes graphic designs and translates them into beautiful front end code. He's also a JavaScript whiz.
-        </p>
-      </article>
-      <article>
-        <header>
-          <h1 class='zeta'>Gillian</h1>
-          <h2 class='eta'>Business Development Goddess</h2>
-        </header>
-        <p class='eta'>
-          Gill helps us meet new clients. She's been part of the team since 2011 and has already helped us to grow significantly beyond those clients who have been with us for years. Gill isn't a geek, which helps considerably, as she's able to talk to people in client-speak, and makes sure we do too!
-        </p>
-      </article>
-      <article>
-        <header>
-          <h1 class='zeta'>Ian</h1>
-          <h2 class='eta'>Front End Wizard</h2>
-        </header>
-        <p class='eta'>
-          Ian works with Ade to turn your pretty Front End designs into gorgeous HTML. He's also the inspiration behind our fab 404 and 500 pages.
-        </p>
-      </article>
-      <article class='last'>
-        <header>
-          <h1 class='zeta'>Nadjaha</h1>
-          <h2 class='eta'>Digital Project Manager</h2>
-        </header>
-        <p class='eta'>
-          Nadj is our ace DPM. She makes sure we don't miss anything, including deadlines!
-          Her superior attention to detail means that our clients stay happy, and we stay focused.
-          Nadj is our "gatekeeper": she's usually your first port of call to get things done.
-        </p>
-      </article>
-    </section>
-  </div>
-</div>
-<div class='row row_six'>
   <div class='wrap'>
     <section class='panel contact_us'>
       <div class='introduction_narrow'>
         <h1 class='delta'>Contact us</h1>
-        <p class='zeta'>
+        <p class='epsilon'>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, sint, doloribus incidunt labore corporis tempore consequatur.
         </p>
       </div>
@@ -328,7 +216,7 @@
 </div>
 <footer class='main'>
   <div class='wrap'>
-    Blah
+    I'm a footer
   </div>
 </footer>
 

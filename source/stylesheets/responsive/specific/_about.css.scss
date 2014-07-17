@@ -1,0 +1,19 @@
+.about {
+  .row_one {
+    .panel {
+      &.our_people {
+        article {
+          @include span-columns(2, 10);
+
+          &.last {
+            @include omega;
+          }
+        }
+
+        .content_left {
+          @include span-columns(6, 12);
+        }
+      }
+    }
+  }
+}

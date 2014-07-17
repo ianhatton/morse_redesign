@@ -1,0 +1,25 @@
+.about {
+  .row_one {
+    // @include transition(background-color 0.2s ease-in-out);
+    // background-color: $red;
+    // color: #fff;
+
+    &:hover {
+      // background-color: darken($red, 2%);
+    }
+
+    .panel {
+      &.our_people {
+        article {
+          header {
+            margin-bottom: 10px;
+            
+            h2 {
+              // color: #e7b4ae;
+            }
+          }
+        }
+      }
+    }
+  }
+}
