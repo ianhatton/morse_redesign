@@ -32,14 +32,21 @@ title: Morse Digital
         %p.epsilon
           In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
       %ul
-        %li{ "ng-repeat" => "service in services.services", "ng-class" => "{last : ($index +1) % 4 == 0}", class: "item_{{$index+1}}" }
-          %i.alpha.fa{ class: "{{service.icon}}" }
-          .clearfix
-            %h2.zeta
-              {{service.name}}
-          %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.
-        %li.last
-          = link_to "More", "#", class: "button"
+        %li{ "ng-repeat" => "service in services.services | limitTo:3", class: "item_{{$index+1}}" }
+          .panel_content
+            .front.face
+              %i.alpha.fa{ class: "{{service.icon}}" }
+              .clearfix
+                %h2.zeta
+                  {{service.name}}
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.
+            .back.face
+              %i.alpha.fa{ class: "{{service.icon}}" }
+              .clearfix
+                %h2.zeta
+                  {{service.name}}
+              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.
+      = link_to "But that's not all", "#", class: "button"
 
     %section.panel.our_approach
       .panel_content

@@ -24,13 +24,13 @@ body, html {
   padding: 50px 0;
 }
 
-.introduction_narrow {
+.cta, .introduction_narrow {
   @include pad(2, 2);
   @include span-columns(8, 12);
 }
 
 .panel {
-  margin: 20px 0;
+  margin: 50px 0;
 }
 
 .panel, .row {

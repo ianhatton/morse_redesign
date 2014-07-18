@@ -21,7 +21,43 @@
     .panel {
       &.what_do_we_do {
         li {
+          @include perspective(1000);
+          position: relative;
           text-align: center;
+
+          &:hover {
+            .panel_content {
+              @include rotateY(180deg);
+            }
+          }
+
+          .back {
+            background-color: $text_dark;
+            color: white;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            bottom: 20px;
+            left: 20px;
+            
+          }
+
+          .face {
+            @include backface-visibility(hidden);
+
+            &.back {
+              @include rotateY(180deg);
+            }
+          }
+
+          .front {
+            position: relative;
+          }
+
+          .panel_content {
+            @include transform-style(preserve-3d);
+            @include transition(all 0.7s linear);
+          }
         }
       }
 

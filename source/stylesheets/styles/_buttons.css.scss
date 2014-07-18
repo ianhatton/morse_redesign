@@ -5,6 +5,7 @@
 
   // styling
   @include transition(all 0.2s ease-in-out);
+  background-color: darken(#e9e9eb, 1%);
   color: $text_dark;
   font-size: 1.5em; /* 24px */
   line-height: 1.625em; /* 39px / 24px */

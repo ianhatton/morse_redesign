@@ -3,15 +3,15 @@
     .panel {
       &.what_do_we_do {
         li {
-          @include span-columns(3, 12);
+          @include span-columns(4, 12);
 
-          &.item_4, &.last {
+          &.item_3, &.last {
             @include omega;
           }
+        }
 
-          &.item_5 {
-            clear: left;
-          }
+        .button {
+          float: right;
         }
       }
     }
