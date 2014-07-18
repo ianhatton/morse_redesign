@@ -64,19 +64,30 @@
         </p>
       </div>
       <ul>
-        <li class='item_{{$index+1}}' ng-class='{last : ($index +1) % 4 == 0}' ng-repeat='service in services.services'>
-          <i class='alpha fa {{service.icon}}'></i>
-          <div class='clearfix'>
-            <h2 class='zeta'>
-              {{service.name}}
-            </h2>
+        <li class='item_{{$index+1}}' ng-repeat='service in services.services | limitTo:3'>
+          <div class='panel_content'>
+            <div class='front face'>
+              <i class='alpha fa {{service.icon}}'></i>
+              <div class='clearfix'>
+                <h2 class='zeta'>
+                  {{service.name}}
+                </h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.</p>
+            </div>
+            <div class='back face'>
+              <i class='alpha fa {{service.icon}}'></i>
+              <div class='clearfix'>
+                <h2 class='zeta'>
+                  {{service.name}}
+                </h2>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.</p>
+            </div>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.</p>
-        </li>
-        <li class='last'>
-          <a class="button" href="#">More</a>
         </li>
       </ul>
+      <a class="button" href="#">But that's not all</a>
     </section>
     <section class='panel our_approach'>
       <div class='panel_content'>
