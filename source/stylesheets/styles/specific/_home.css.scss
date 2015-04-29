@@ -20,44 +20,111 @@
   .row_two {
     .panel {
       &.what_do_we_do {
-        li {
-          @include perspective(1000);
-          position: relative;
-          text-align: center;
+        .additional_services {
+          // layout
+          @include clearfix;
 
-          &:hover {
-            .panel_content {
-              @include rotateY(180deg);
-            }
+          // styling
+          background-color: #302614;
+
+          header {
+            float: left;
           }
 
-          .back {
-            background-color: $text_dark;
-            color: white;
+          h1, i {
+            color: #80735e;
+          }
+
+          i {
+            // layout
+            display: block;
+
+            // styling
+            opacity: 1;
+            font-size: 50px;
+          }
+
+          li {
+            text-align: center;
+          }
+
+          p {
+            color: #fff;
+          }
+
+          ul {
+            // layout
+            float: left;
+
+            // styling
+            background-color: #362c1b;
+          }
+        }
+
+        .main_services {
+          h2, p {
+            @include transition(all 0.2s ease-in-out);
+          }
+
+          i {
+            // layout
             position: absolute;
-            top: 20px;
-            right: 20px;
-            bottom: 20px;
-            left: 20px;
-            
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+
+            // styling
+            color: darken(#0085a1, 1%);
+            font-size: 300px;
           }
 
-          .face {
-            @include backface-visibility(hidden);
+          li {
+            position: relative;
+            @include transition(all 0.2s ease-in-out);
 
-            &.back {
-              @include rotateY(180deg);
+            &:hover {
+              opacity: 1 !important;
+
+              h2, p {
+                @include scale(1.05);
+              }
             }
           }
 
-          .front {
-            position: relative;
+          ul {
+            @include transition(background-color 0.2s ease-in-out);
+            background-color: #0085a1;
+
+            &:hover {
+              background-color: darken(#0085a1, 5%);
+
+              li {
+                opacity: 0.8;
+              }
+            }
           }
 
           .panel_content {
-            @include transform-style(preserve-3d);
-            @include transition(all 0.7s linear);
+            position: relative;
+            z-index: 2;
           }
+        }
+
+        ul {
+          @include clearfix;
+        }
+
+        li {
+          // layout
+          float: left;
+
+          // styling
+          color: #fff;
+        }
+
+        .introduction_narrow {
+          background-color: #007892;
+          color: #fff;
         }
       }
 
@@ -66,8 +133,8 @@
         float: right;
 
         // styling
-        background-color: $red;
-        color: #fff;
+        background-color: #ffb000;
+        color: #a16f00;
       }
     }
   }

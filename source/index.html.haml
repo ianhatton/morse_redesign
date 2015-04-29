@@ -6,10 +6,11 @@ title: Morse Digital
 
 = partial "header"
 
-.wrap
-  .row.row_one
+
+.row.row_one
+  .wrap
     %section.panel.hello.introduction
-      %h1.alpha Hello!
+      %h1.alpha.bold Hello!
       %p.delta
         We are a
         %em digital build agency
@@ -25,80 +26,112 @@ title: Morse Digital
           =link_to "Contact us", "#"
         and we'll find a way forward for you.
 
-  .row.row_two
-    %section.panel.what_do_we_do{ "ng-controller" => "ServicesController as services" }
-      .introduction_narrow
+.row.row_two
+  %section.panel.what_do_we_do
+    .introduction_narrow
+      .wrap
         %h1.delta What do we do?
         %p.epsilon
           In the digital world, a system means much more than just a website which is an online brochure for a business. Although we do build lots of those, our real expertise is in building:
+    .main_services
       %ul
-        %li{ "ng-repeat" => "service in services.services | limitTo:3", class: "item_{{$index+1}}" }
+        %li
+          %i.fa.fa-database
           .panel_content
-            .front.face
-              %i.alpha.fa{ class: "{{service.icon}}" }
-              .clearfix
-                %h2.zeta
-                  {{service.name}}
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.
-            .back.face
-              %i.alpha.fa{ class: "{{service.icon}}" }
-              .clearfix
-                %h2.zeta
-                  {{service.name}}
-              %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, necessitatibus quisquam voluptas saepe neque molestiae.
-      = link_to "But that's not all", "#", class: "button"
+            .clearfix
+              %h2.zeta Dynamic Database-driven Websites
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, id ipsum, voluptatibus, nulla consequatur nobis laudantium aliquam voluptates possimus vero ullam commodi ipsam minus voluptatum saepe doloremque fuga. Laudantium, ducimus.
+        %li
+          %i.fa.fa-cogs
+          .panel_content
+            %i.alpha.fa
+            .clearfix
+              %h2.zeta Management Systems
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia voluptas, tempore ipsum porro tenetur deleniti, omnis beatae maiores in consequuntur aliquid soluta. Ad fugit, veniam laborum voluptate unde, est sit.
+        %li
+          %i.fa.fa-comments-o
+          .panel_content
+            .clearfix
+              %h2.zeta Communication Systems
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam veniam alias minima dolore at officia autem repudiandae nam obcaecati itaque necessitatibus, nulla facere non aliquid quas rerum aperiam, sapiente vero.
+    .additional_services
+      %header
+        .panel_content
+          %h1.zeta But wait, there's more!
+          %p We can also build the following:
+      %ul
+        %li 
+          .panel_content
+            %i.fa.fa-code
+            HTML emails
+        %li
+          .panel_content
+            %i.fa.fa-tumblr
+            Tumblr blogs
+        %li
+          .panel_content
+            %i.fa.fa-sitemap
+            Extranets
+        %li
+          .panel_content
+            %i.fa.fa-shopping-cart
+            eCommerce
+        %li
+          .panel_content
+            %i.fa.fa-apple
+            iPhone and iPad apps
 
-    %section.panel.our_approach
-      .panel_content
-        %h1.epsilon Our Approach
-        %ul
-          %li
-            %em "Seek first to understand":
-            We take a brief then work out what the client requires (not always what the client thinks they require).
-          %li
-            %em Propose a solution in non-tech terms:
-            We like to speak Plain English. Drawing pictures helps, too.
-          %li
-            %em Build a Prototype:
-            If there's something innovative or particularly high-tech in the proposed solution, we build a demo before the client commits wholesale to the project. Our prototype-to-full-build ratio is 100% so far.
-          %li
-            %em Agree a plan:
-            Little explanation needed here...
-          %li
-            %em Deliver. On budget:
-            We have a little rule we call our "No Surprises" rule. We work to a fixed cost for a fixed project. If the client asks for more, we agree any extra charges in advance. Our clients never receive an invoice they're not expecting.
+  %section.panel.our_approach
+    .panel_content
+      %h1.epsilon Our Approach
+      %ul
+        %li
+          %em "Seek first to understand":
+          We take a brief then work out what the client requires (not always what the client thinks they require).
+        %li
+          %em Propose a solution in non-tech terms:
+          We like to speak Plain English. Drawing pictures helps, too.
+        %li
+          %em Build a Prototype:
+          If there's something innovative or particularly high-tech in the proposed solution, we build a demo before the client commits wholesale to the project. Our prototype-to-full-build ratio is 100% so far.
+        %li
+          %em Agree a plan:
+          Little explanation needed here...
+        %li
+          %em Deliver. On budget:
+          We have a little rule we call our "No Surprises" rule. We work to a fixed cost for a fixed project. If the client asks for more, we agree any extra charges in advance. Our clients never receive an invoice they're not expecting.
 
-    %section.panel.who_hires_us
-      .panel_content
-        %h1.epsilon Who Hires Us?
-        %p
-          Our clients include:
-        %ul.bullets
-          %li Media Owners
-          %li Industrial Companies who have a problem which needs a technological solution
-          %li Design Agencies who need digital build capabilities
-          %li Client-facing Agencies who need client-presentable technical experts
-          %li Agencies who have sold a client an idea which they have no idea how to deliver
+  %section.panel.who_hires_us
+    .panel_content
+      %h1.epsilon Who Hires Us?
+      %p
+        Our clients include:
+      %ul.bullets
+        %li Media Owners
+        %li Industrial Companies who have a problem which needs a technological solution
+        %li Design Agencies who need digital build capabilities
+        %li Client-facing Agencies who need client-presentable technical experts
+        %li Agencies who have sold a client an idea which they have no idea how to deliver
 
-    %section.panel.our_clients
-      .introduction_narrow
-        %h1.delta Who have we worked with?
-        %p.epsilon
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus in, quaerat ducimus dolorem libero magnam ipsum.
-      .panel_content
-        .clearfix
-          %article
-            =image_tag "client_logo_1.png", alt: "BFI"
-          %article
-            =image_tag "client_logo_2.png", alt: "Universal"
-          %article
-            =image_tag "client_logo_3.png", alt: "Tesco"
-          %article
-            =image_tag "client_logo_4.png", alt: "Sony Pictures"
-          %article
-            =image_tag "client_logo_1.png", alt: "BFI"
-          %article.last
-            =image_tag "client_logo_1.png", alt: "BFI"
+  %section.panel.our_clients
+    .introduction_narrow
+      %h1.delta Who have we worked with?
+      %p.epsilon
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus in, quaerat ducimus dolorem libero magnam ipsum.
+    .panel_content
+      .clearfix
+        %article
+          =image_tag "client_logo_1.png", alt: "BFI"
+        %article
+          =image_tag "client_logo_2.png", alt: "Universal"
+        %article
+          =image_tag "client_logo_3.png", alt: "Tesco"
+        %article
+          =image_tag "client_logo_4.png", alt: "Sony Pictures"
+        %article
+          =image_tag "client_logo_1.png", alt: "BFI"
+        %article.last
+          =image_tag "client_logo_1.png", alt: "BFI"
 
 .row.row_four
   %section.panel.feed
